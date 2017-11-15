@@ -1,8 +1,3 @@
-/*
- * Versión corta del ahorcado con AWT
- * GSL-UAT 2008   Versión 1.0
- */
-
 package elahorcado;
 
 import java.awt.*;
@@ -10,11 +5,16 @@ import java.awt.event.*;
 import java.applet.*;
 
 public class Version extends Dialog implements ActionListener {
-  String mensaje = "EL AHORCADO \n VERSION 1.0 \n GSL-UAT 2008"+
-          "\n http://gsl.uat.edu.mx";
+  String mensaje = "Juego del Ahorcado, versión Halloween " + "\n" +
+          "Autores: " + "\n" +
+          "Aldo J Marquez" + "\n" +
+          "Mateo Pacheco" + "\n" +
+          "Luis Suarez" + "\n" +
+          "Juan Esteban Muñoz" + "\n" 
+          ;
   private TextArea ta;
-  //private Button yes = new Button("Yes");
-  private Button b = new Button("salir");
+  
+  private Button b = new Button("Salir");
 
   public Version(Frame parent, String message) {
     super(parent, true);
@@ -42,7 +42,7 @@ public class Version extends Dialog implements ActionListener {
   
   public static void main(String arg[]){
       Frame f = new Frame();
-     Version vg = new Version(f, "VERSION 1.0");
+     Version vg = new Version(f, "V 1.0");
      vg.setVisible(true);
   
   }
