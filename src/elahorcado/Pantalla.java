@@ -30,6 +30,7 @@ public class Pantalla implements WindowListener, ActionListener {
     private Menu menu2Op1;
     private MenuItem menu3Op1;
     private MenuItem niv1, niv2, niv3;
+    private Button boton1;
 
     public Pantalla(String titulo) {
 
@@ -119,6 +120,13 @@ public class Pantalla implements WindowListener, ActionListener {
         f.add(p2);
         f.add(p1);
         f.setVisible(true);
+        
+        this.boton1 = new Button("Presionar para escuchar la palabra"); // Creacion del objeto
+        boton1.setBounds(100, 100, 100, 20); // Coordenadas del objeto
+        //boton1.setBackground(Color.WHITE); // Modificar parametros del objeto
+        p2.add(boton1); // Adicion del objeto al contendor
+        
+        
     }
 
     public static void main(String args[]) {
